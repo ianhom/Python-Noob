@@ -12,11 +12,11 @@ print smalllist * 2     # print small list twice
 print list + smalllist  # print both list
 
 # result
-""""
+"""
 ['abcd', 123, 1.23, 'Ian']
 abcd
 [123, 1.23]
 [1.23, 'Ian']
 [123, 'Jane', 123, 'Jane']
 ['abcd', 123, 1.23, 'Ian', 123, 'Jane']
-""""
+"""
