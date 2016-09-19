@@ -3,6 +3,7 @@
 
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'};
 dict2 = {'fruit': 'Apple','price': 20};
+dict3 = {'fruit': 'Orange','price': 30};
  
 dict['Age'] = 8; # update existing entry
 dict['School'] = "DPS School"; # Add new entry
@@ -18,6 +19,14 @@ print str(dict);
 print type(dict);
 
 print dict.values();
+dict.clear();
+print dict;
+
+print dict2;
+dict2.update(dict3);
+print dict2;
+
+print dict2.copy();  #???
 
 # result
 """
