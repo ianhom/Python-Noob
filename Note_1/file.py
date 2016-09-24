@@ -1,12 +1,14 @@
 #!/usr/bin/python
 
 f = open("readme.txt","w");
-f.write("Hello, world!!");
+c = f.write("Hello, world!!");
 f.close();
+print c;
 
 e = open("readme.txt","r");
-e.read();
+s = e.read();
 e.close();
+print s;
 
 # result
 """
