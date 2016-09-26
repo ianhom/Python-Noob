@@ -2,10 +2,10 @@
 # -*- coding: UTF-8 -*-
 
 class dog:
-    'This is a dog class'
+    'This is a dog class'  #函数提示
     dogcnt = 1;
     
-    def __init__(self, name, age):
+    def __init__(self, name, age):  #构造函数
         self.name = name
         self.age  = age
         dog.dogcnt += 1
