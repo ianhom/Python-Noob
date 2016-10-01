@@ -21,3 +21,17 @@ print format % (item_width, 'Dried Apricots', price_width, 8);
 print format % (item_width, 'Prunes(4 lbs)', price_width, 12);
 
 print '=' * width;
+
+# result
+'''
+Please enter width: 35
+===================================
+Item                          Price
+-----------------------------------
+Apples                         0.40
+Pears                          0.50
+Cantaloupes                    1.92
+Dried Apricots                 8.00
+Prunes(4 lbs)                 12.00
+===================================
+'''
