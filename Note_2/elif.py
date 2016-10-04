@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 while True:
     n = input('Enter a number: ');
     if n > 0:
