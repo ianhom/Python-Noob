@@ -17,11 +17,13 @@ def Ascii2Str():
 import binascii
 
 def Ascii2Str():
+    "Transfer Ascii to string to check hex-file"
     while True:
         a = raw_input("Please input the bin: ");
 
         if a == "stop":
+            print "Function is over!"
             return;
         print binascii.a2b_hex(a).decode("ascii");
-        
+    return;
 
