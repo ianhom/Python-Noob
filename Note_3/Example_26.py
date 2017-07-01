@@ -4,9 +4,6 @@
 '''
 利用递归方法求5!。
 '''
-
-#!/usr/bin/python
-# -*- coding: UTF-8 -*-
  
 def fact(j):
     sum = 0
