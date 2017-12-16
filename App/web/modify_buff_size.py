@@ -1,5 +1,5 @@
-# -*- coding: cp936 -*-
-#！/usr/bin/python
+
+#!/usr/bin/python
 
 import socket
 
