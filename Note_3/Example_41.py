@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+'''
+题目：模仿静态变量的用法。
+'''
+
 def varfunc():
     var = 0
     print 'var = %d' % var
