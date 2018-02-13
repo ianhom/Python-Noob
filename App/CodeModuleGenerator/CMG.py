@@ -18,8 +18,10 @@ Author_name = raw_input("May I have you name?\n")
 module_name = raw_input("What would like to call this module?\n")
 module_desp = raw_input("Please say something about this module\n")
 
-mkdir(module_name + timestr)
-chdir(module_name + timestr)
+mkdir(module_name + "_" + timestr)
+chdir(module_name + "_" + timestr)
+
+timestr = strftime("%Y-%m-%d", localtime())
 
 c_file = open(module_name + '.c', "w+")
 h_file = open(module_name + '.h', "w+")
@@ -30,7 +32,7 @@ file_ID   = "* ID     : N/A\n"
 file_desp = "* Descrp : "+ module_desp+"\n"
 file_ver  = "* Version: V1.00\n"
 file_Auth = "* Author : "+ Author_name+"\n"
-file_date = "* Date   ："+ timestr[0:8]+"\n"
+file_date = "* Date   ："+ timestr +"\n"
 banner_bg = "/***************************************\n"
 banner_ed = "***************************************/\n\n"
 
