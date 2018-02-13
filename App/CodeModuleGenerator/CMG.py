@@ -32,7 +32,7 @@ file_ID   = "* ID     : N/A\n"
 file_desp = "* Descrp : "+ module_desp+"\n"
 file_ver  = "* Version: V1.00\n"
 file_Auth = "* Author : "+ Author_name+"\n"
-file_date = "* Date   ："+ timestr +"\n"
+file_date = "* Date   : "+ timestr +"\n"
 banner_bg = "/***************************************\n"
 banner_ed = "***************************************/\n\n"
 
