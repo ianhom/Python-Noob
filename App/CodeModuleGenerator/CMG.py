@@ -10,9 +10,9 @@ timestr =  strftime("%Y%m%d-%H%M%S", localtime())
 if getcwd()[-11:] != "Code Module":
     mkdir('Code Module')
     chdir("Code Module")
-print "/_/_/_/_/_/_/_/_/_/_/_/_/_//_/_/_/_/"
+print "/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/"
 print "Code Module Generator V0.10"
-print "/_/_/_/_/_/_/_/_/_/_/_/_/_//_/_/_/_/\n"
+print "/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\n"
 
 Author_name = raw_input("May I have you name?\n")
 module_name = raw_input("What would like to call this module?\n")
@@ -53,7 +53,6 @@ file_proc = "BYTE " + module_name + "_Process(BYTE ucChNo);\n\n"
 file_all = file_head + file_init + file_proc
 h_file.write(file_all)
 
-# return
 c_file.close()
 h_file.close()
 chdir("../")
