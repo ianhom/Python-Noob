@@ -41,18 +41,21 @@ file_head = banner_bg + file_Cprt + file_name + file_ID + file_desp + file_ver +
 file_init = "BYTE " + module_name + "_Init(void)\n{\n\n    return SW_OK;\n}\n\n"
 file_proc = "BYTE " + module_name + "_Process(BYTE ucChNo)\n{\n\n    return SW_OK;\n}\n\n"
 
+# Make c-file
 file_all = file_head + file_init + file_proc
 c_file.write(file_all)
 
 file_name = "* Name   : "+ module_name + ".c\n"
 file_head = banner_bg + file_Cprt + file_name + file_ID + file_desp + file_ver + file_Auth + file_date + banner_ed
 
+# Make h-file
 file_init = "BYTE " + module_name + "_Init(void);\n\n"
 file_proc = "BYTE " + module_name + "_Process(BYTE ucChNo);\n\n"
 
 file_all = file_head + file_init + file_proc
 h_file.write(file_all)
 
+# clear up
 c_file.close()
 h_file.close()
 chdir("../")
