@@ -55,6 +55,9 @@ file_proc = "BYTE " + module_name + "_Process(BYTE ucChNo);\n\n"
 file_all = file_head + file_init + file_proc
 h_file.write(file_all)
 
+# Make a readme-file
+r-file = open("readme.txt","w+")
+
 # clear up
 c_file.close()
 h_file.close()
