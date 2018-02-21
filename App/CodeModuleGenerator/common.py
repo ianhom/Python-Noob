@@ -19,5 +19,5 @@ mpush = "#push"
 file_end = "End of file\n"
 
 # Code segments
-def hhead(name):
-    return mifnd + name "\n" + mundf + name + "\n" + mend
+def hhead_start(name):
+    return mifnd + name "\n" + mdf + name + "\n"
