@@ -3,7 +3,7 @@
 # MACRO
 mif   = "#if "
 mels  = "#else "
-mend  = "#endif\n"
+mend  = "#endif "
 mdf   = "#define "
 mundf = "#undef "
 mifd  = "#ifdef "
@@ -21,3 +21,6 @@ file_end = "End of file\n"
 # Code segments
 def hhead_start(name):
     return mifnd + name "\n" + mdf + name + "\n"
+
+def hhead_end(name):
+    return mend + "/* " + name + " */" + "\n"
