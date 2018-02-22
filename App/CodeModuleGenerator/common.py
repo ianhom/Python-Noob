@@ -19,8 +19,10 @@ mpush = "#push"
 file_end = "End of file\n"
 
 # Code segments
-def hhead_start(name):
+def h_head_start(name):
     return mifnd + name "\n" + mdf + name + "\n"
 
-def hhead_end(name):
+def h_head_end(name):
     return mend + "/* " + name + " */" + "\n"
+
+h_cpp_start = mifd "__cplusplus\nextern \"C\" {\n" + mend
