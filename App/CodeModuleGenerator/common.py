@@ -25,4 +25,6 @@ def h_head_start(name):
 def h_head_end(name):
     return mend + "/* " + name + " */" + "\n"
 
-h_cpp_start = mifd "__cplusplus\nextern \"C\" {\n" + mend
+h_cpp_start = mifd + "__cplusplus\nextern \"C\" {\n" + mend + "\n"
+
+h_cpp_end   = mifd + "} /* __cplusplus\n" + mend + "\n"
