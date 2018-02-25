@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
 # Common defines for CMG
 
 # MACRO
@@ -20,11 +23,11 @@ file_end = "End of file\n"
 
 # Code segments
 def h_head_start(name):
-    return mifnd + name "\n" + mdf + name + "\n"
+    return mifnd + name + "\n" + mdf + name + "\n\n"
 
 def h_head_end(name):
     return mend + "/* " + name + " */" + "\n"
 
-h_cpp_start = mifd + "__cplusplus\nextern \"C\" {\n" + mend + "\n"
+h_cpp_start = mifd + "__cplusplus\nextern \"C\" {\n" + mend + "\n\n"
 
-h_cpp_end   = mifd + "} /* __cplusplus\n" + mend + "\n"
+h_cpp_end   = mifd + "\n} /* __cplusplus */\n" + mend + "\n\n"
