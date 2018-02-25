@@ -1,8 +1,9 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-from time import *
-from os   import mkdir,chdir,getcwd
+from time   import *
+from os     import mkdir,chdir,getcwd
+from common import *
 
 # Create folder named by time.
 timestr =  strftime("%Y%m%d-%H%M%S", localtime())
@@ -52,16 +53,15 @@ file_head = banner_bg + file_Cprt + file_name + file_ID + file_desp + file_ver +
 file_init = "BYTE " + module_name + "_Init(void);\n\n"
 file_proc = "BYTE " + module_name + "_Process(BYTE ucChNo);\n\n"
 
-file_all = file_head + file_init + file_proc
+file_all = file_head + h_head_start(module_name) + h_cpp_start + file_init + file_proc + h_cpp_end + h_head_end(module_name)
 h_file.write(file_all)
 
 # Make a readme-file
-r-file = open("readme.txt","w+")
+r_file = open("readme.txt","w+")
 
 # clear up
 c_file.close()
 h_file.close()
 chdir("../")
 print getcwd()
-
 
