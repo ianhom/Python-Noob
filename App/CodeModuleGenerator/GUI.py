@@ -8,15 +8,15 @@ window = tk.Tk()
 window.title('Code Module Generator')
 window.geometry('1000x500')
 
+# Show the Title
 l = tk.Label(window, 
-    text='Code Module Generator!',    # 标签的文字
-    bg='white',     # 背景颜色
-    font=('Arial', 24),     # 字体和字体大小
-    width=35, height=2  # 标签长宽
-    )
-l.pack()    # 固定窗口位置
+    text='Code Module Generator!',    # Text of Label
+    bg='white',                       # Background color
+    font=('Arial', 24),               # Font and Size
+    width=35, height=2)               # Size of Lable
+l.pack()                              # center in winodw
 
-#'''
+# Show the input entries
 Auth = tk.StringVar()  
 entry = tk.Entry(window, textvariable=Auth,width=35).pack()  
 Auth.set('Please input your name here')
@@ -29,22 +29,17 @@ Des = tk.StringVar()
 entry = tk.Entry(window, textvariable=Des,width=35).pack()  
 Des.set('Please describe this module') 
 
-
+# Create a button to start generating code
 def Start():
     A = Auth.get()
     M = ModuleName.get()
     D = Des.get()
     CMG.GenerateCode(A,M,D)
-#'''
-
     
 b = tk.Button(window, 
-    text='Start!',      # 显示在按钮上的文字
+    text='Generate!',      # Text on the button
     width=15, height=2, 
-    command = Start)     # 点击按钮式执行的命令
-b.pack()    # 按钮位置
-
-
-# 这里是窗口的内容
+    command = Start)       # Function called when button is pressed
+b.pack()                   
 
 window.mainloop()
