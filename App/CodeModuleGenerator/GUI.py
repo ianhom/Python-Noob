@@ -17,24 +17,29 @@ l = tk.Label(window,
 l.pack()                              # center in winodw
 
 # Show the input entries
-Auth = tk.StringVar()  
+Auth  = tk.StringVar()  
 entry = tk.Entry(window, textvariable=Auth,width=35).pack()  
 Auth.set('Please input your name here')
+
+Cmpy  = tk.StringVar()  
+entry = tk.Entry(window, textvariable=Cmpy,width=35).pack()  
+Cmpy.set('Please input your name here')
 
 ModuleName = tk.StringVar()  
 entry = tk.Entry(window, textvariable=ModuleName,width=35).pack()  
 ModuleName.set('Please name your module')
 
-Des = tk.StringVar()  
+Des   = tk.StringVar()  
 entry = tk.Entry(window, textvariable=Des,width=35).pack()  
 Des.set('Please describe this module') 
 
 # Create a button to start generating code
 def Start():
     A = Auth.get()
+    C = Cmpy.get()
     M = ModuleName.get()
     D = Des.get()
-    CMG.GenerateCode(A,M,D)
+    CMG.GenerateCode(A,C,M,D)
     
 b = tk.Button(window, 
     text='Generate!',      # Text on the button
