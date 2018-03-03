@@ -6,7 +6,7 @@ from os     import mkdir,chdir,getcwd
 from common import *
 
 # Create folder named by time.
-def GenerateCode(auth,mn,md):
+def GenerateCode(auth,cpy,mn,md):
     timestr =  strftime("%Y%m%d-%H%M%S", localtime())
 
     if getcwd()[-11:] != "Code Module":
@@ -14,6 +14,7 @@ def GenerateCode(auth,mn,md):
         chdir("Code Module")
 
     Author_name = auth
+    Compny_name = cpy
     module_name = mn
     module_desp = md
 
@@ -26,12 +27,12 @@ def GenerateCode(auth,mn,md):
     h_file = open(module_name + '.h', "w+")
 
     file_name = "* Name   : "+ module_name + ".c\n"
-    file_Cprt = "* Copyright (C) 2018 MOE\n"
+    file_Cprt = "* Copyright (C) 2018 " + Compny_name  + "\n"
     file_ID   = "* ID     : N/A\n"
-    file_desp = "* Descrp : "+ module_desp+"\n"
+    file_desp = "* Descrp : "+ module_desp + "\n"
     file_ver  = "* Version: V1.00\n"
-    file_Auth = "* Author : "+ Author_name+"\n"
-    file_date = "* Date   : "+ timestr +"\n"
+    file_Auth = "* Author : "+ Author_name + "\n"
+    file_date = "* Date   : "+ timestr + "\n"
     banner_bg = "/***************************************\n"
     banner_ed = "***************************************/\n\n"
 
