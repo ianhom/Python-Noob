@@ -23,7 +23,7 @@ Auth.set('Please input your name here')
 
 Cmpy  = tk.StringVar()  
 entry = tk.Entry(window, textvariable=Cmpy,width=35).pack()  
-Cmpy.set('Please input your name here')
+Cmpy.set('Please input your company name here')
 
 ModuleName = tk.StringVar()  
 entry = tk.Entry(window, textvariable=ModuleName,width=35).pack()  
