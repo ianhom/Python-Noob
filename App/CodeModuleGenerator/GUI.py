@@ -1,7 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-import tkinter as tk
+import tkinter as tk  # Use for Python3
+#import Tkinter as tk  # Use for Python2
 import CMG
 
 window = tk.Tk()
