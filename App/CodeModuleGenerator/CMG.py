@@ -52,7 +52,7 @@ def GenerateCode(auth,cpy,mn,md):
     file_init = "BYTE " + module_name + "_Init(void);\n\n"
     file_proc = "BYTE " + module_name + "_Process(BYTE ucChNo);\n\n"
 
-    file_all = file_head + h_head_start(module_name.upper) + h_cpp_start + file_init + file_proc + h_cpp_end + h_head_end(module_name.upper)
+    file_all = file_head + h_head_start(module_name.upper()) + h_cpp_start + file_init + file_proc + h_cpp_end + h_head_end(module_name.upper())
     h_file.write(file_all)
 
     # Make a readme-file
